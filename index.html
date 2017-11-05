@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <title>Les Films de Plein Air - Festival Parc Monceau</title>
+  <link href="https://fonts.googleapis.com/css?family=Abel|Titillium+Web" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <script src="https://use.fontawesome.com/4b62c45289.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/flex.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+  <header id="header" class="flex justifyBetween">
+    <h1>Les Films de Plein Air</h1>
+    <nav id="nav" class="selfCenter flex justifyAround">
+      <ul class="flex justifyAround">
+        <li><a href="#home" class="active">ACCUEIL</a></li>
+        <li><a href="#about">A PROPOS</a></li>
+        <li><a href="#news">ACTUALITES</a></li>
+        <li><a href="#films">PROGRAMMATION</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="home flexColumn justifyCenter itemsCenter">
+      <h1 class="home__title">Le Festival Les Films de Plein Air <br> s'installe au parc Monceau du 5 au 8 Aout 2017 !</h1>
+      <div class="home__btns flexWrap">
+        <a href="#aboutTarget"><button class="btn home__btns--more">En savoir plus</button></a>
+        <a href="#filmsTarget"><button class="btn home__btns--films">Découvrir les films</button></a>
+      </div>
+      <div id="aboutTarget"></div>
+    </section>
+
+    <section id="about" class="about flex">
+      <div class="about__pres flex1">
+        <h2>Le Festival</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum facere nulla aut maiores reprehenderit eaque harum, itaque asperiores debitis? Perspiciatis eligendi ipsum quod! Dolor perferendis, nam excepturi explicabo eligendi doloremque.</p>
+        <a href="#contact">S'incrire maintenant !</a>
+      </div>
+      <div class="about__info flex1">
+        <h2>Infos Pratiques</h2>
+        <div class="flex about__info__container">
+          <ul class="flex1 selfCenter">
+            <li><i class="fa fa-subway" aria-hidden="true" ></i><p>Metro Monceau, ligne 2</p></li>
+            <li><i class="fa fa-map-marker" aria-hidden="true"></i><p>35 Boulevard de Courcelles, 75008 Paris</p></li>
+            <li><i class="fa fa-calendar" aria-hidden="true"></i><p>Du jeudi 5 au dimanche 8 Aout 2017 de 18h à minuit</p></li>
+          </ul>
+          <div id="map" style="width:60%;height:200px;"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="news" class="news">
+      <h2>Dernières Actualités</h2>
+      <div class="flex news__container">
+        <article>
+          <h3>Lorem Ipsum</h3>
+          <span>Posté le 18/07</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo velit neque quod animi consequatur, error dolor ipsum vero, dignissimos qui eum obcaecati esse molestiae minus nulla excepturi, doloribus expedita voluptate.</p>
+          <a href="articles/art5.html">Lire plus</a>
+        </article>
+        <article>
+          <h3>Lorem Ipsum</h3>
+          <span>Posté le 18/07</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo velit neque quod animi consequatur, error dolor ipsum vero, dignissimos qui eum obcaecati esse molestiae minus nulla excepturi, doloribus expedita voluptate.</p>
+          <a href="articles/art4.html">Lire plus</a>
+        </article>
+        <article>
+          <h3>Lorem Ipsum</h3>
+          <span>Posté le 18/07</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo velit neque quod animi consequatur, error dolor ipsum vero, dignissimos qui eum obcaecati esse molestiae minus nulla excepturi, doloribus expedita voluptate.</p>
+          <a href="articles/art3.html">Lire plus</a>
+        </article>
+      </div>
+      <a href="blog.html">Toute l'actualité</a>
+
+      <div id="filmsTarget"></div>
+    </section>
+
+    <section id="films" class="films">
+      <h2>Les films</h2>
+      <div id="slider">
+        <div class="MS-content">
+          <article class="item flex justifyCenter">
+            <figure>
+              <img src="img/cafeSociety.png">
+              <div class="datetime">05/08 - 18h</div>
+              <figcaption><i>Café Society</i> <br> par Woody Allen</figcaption>
+              <div class="item__details">
+                <h4>Synopsis</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem delectus omnis eum! Cupiditate distinctio blanditiis itaque molestiae, voluptatibus nihil exercitationem, nobis dolore quibusdam architecto numquam, hic nostrum! Illum, fugiat, commodi.</p>
+                <a href="">Voir la bande-annonce</a>
+              </div>
+            </figure>
+          </article>
+          <article class="item">
+            <figure>
+              <img src="img/diamantNoir.jpg">
+              <div class="datetime">05/08 - 20h</div>
+              <figcaption><i>Diamant Noir</i> <br> par Arthur Harari</figcaption>
+              <div class="item__details">
+                <h4>Synopsis</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem delectus omnis eum! Cupiditate distinctio blanditiis itaque molestiae, voluptatibus nihil exercitationem, nobis dolore quibusdam architecto numquam, hic nostrum! Illum, fugiat, commodi.</p>
+                <a href="">Voir la bande-annonce</a>
+              </div>
+            </figure>
+          </article>
+          <article class="item">
+            <figure>
+              <img src="img/danielBlake.jpg">
+              <div class="datetime">05/08 - 22h</div>
+              <figcaption><i>Moi, Daniel Blake</i> <br> par Ken Loach</figcaption>
+              <div class="item__details">
+                <h4>Synopsis</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem delectus omnis eum! Cupiditate distinctio blanditiis itaque molestiae, voluptatibus nihil exercitationem, nobis dolore quibusdam architecto numquam, hic nostrum! Illum, fugiat, commodi.</p>
+                <a href="">Voir la bande-annonce</a>
+              </div>
+            </figure>
+            
+          </article>
+          <article class="item">
+            <figure>
+              <img src="img/divines.jpg">
+              <div class="datetime">06/08 - 18h</div>
+              <figcaption><i>Divines</i> <br> par Houda Benyamina</figcaption>
+              <div class="item__details">
+                <h4>Synopsis</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem delectus omnis eum! Cupiditate distinctio blanditiis itaque molestiae, voluptatibus nihil exercitationem, nobis dolore quibusdam architecto numquam, hic nostrum! Illum, fugiat, commodi.</p>
+                <a href="">Voir la bande-annonce</a>
+              </div>
+            </figure>
+            
+          </article>
+          <article class="item">
+            <figure>
+              <img src="img/filleDeBrest.jpg">
+              <div class="datetime">06/08 - 20h</div>
+              <figcaption><i>La Fille de Brest</i> <br> par Emmanuelle Bercot</figcaption>
+              <div class="item__details">
+                <h4>Synopsis</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem delectus omnis eum! Cupiditate distinctio blanditiis itaque molestiae, voluptatibus nihil exercitationem, nobis dolore quibusdam architecto numquam, hic nostrum! Illum, fugiat, commodi.</p>
+                <a href="">Voir la bande-annonce</a>
+              </div>
+            </figure>
+            
+          </article>
+          <article class="item">
+            <figure>
+              <img src="img/filleInconne.jpg">
+              <div class="datetime">06/08 - 22h</div>
+              <figcaption><i>La Fille Inconnue</i> <br> par Luc et Jean-Pierre Dardenne</figcaption>
+              <div class="item__details">
+                <h4>Synopsis</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem delectus omnis eum! Cupiditate distinctio blanditiis itaque molestiae, voluptatibus nihil exercitationem, nobis dolore quibusdam architecto numquam, hic nostrum! Illum, fugiat, commodi.</p>
+                <a href="">Voir la bande-annonce</a>
+              </div>
+            </figure>
+            
+          </article>
+          <article class="item">
+            <figure>
+              <img src="img/filsDeJean.jpg">
+              <div class="datetime">07/08 - 18h</div>
+              <figcaption><i>Le Fils de Jean</i> <br> par Philippe Lioret</figcaption>
+              <div class="item__details">
+                <h4>Synopsis</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem delectus omnis eum! Cupiditate distinctio blanditiis itaque molestiae, voluptatibus nihil exercitationem, nobis dolore quibusdam architecto numquam, hic nostrum! Illum, fugiat, commodi.</p>
+                <a href="">Voir la bande-annonce</a>
+              </div>
+            </figure>
+            
+          </article>
+          <article class="item">
+            <figure>
+              <img src="img/mademoiselle.jpg">
+              <div class="datetime">07/08 - 20h</div>
+              <figcaption><i>Mademoiselle </i><br> par Park Chan-Wook</figcaption>
+              <div class="item__details">
+                <h4>Synopsis</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem delectus omnis eum! Cupiditate distinctio blanditiis itaque molestiae, voluptatibus nihil exercitationem, nobis dolore quibusdam architecto numquam, hic nostrum! Illum, fugiat, commodi.</p>
+                <a href="">Voir la bande-annonce</a>
+              </div>
+            </figure>
+            
+          </article>
+          <article class="item">
+            <figure>
+              <img src="img/manchesterSea.jpg">
+              <div class="datetime">07/08 - 22h</div>
+              <figcaption><i>Manchester by the Sea</i> <br> par Kenneth Lonergan</figcaption>
+              <div class="item__details">
+                <h4>Synopsis</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem delectus omnis eum! Cupiditate distinctio blanditiis itaque molestiae, voluptatibus nihil exercitationem, nobis dolore quibusdam architecto numquam, hic nostrum! Illum, fugiat, commodi.</p>
+                <a href="">Voir la bande-annonce</a>
+              </div>
+            </figure>
+
+          </article>
+        </div>
+        <div class="MS-controls">
+          <button class="MS-left btn"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+          <button class="MS-right btn"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact flex">
+      <div class="flex1">
+        <h2>S'inscrire au festival</h2>
+        <form>
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Votre Email">
+          </div>
+          <div class="form-group">
+            <label for="numberOfPeople">Combien de personnes seront présentes ?</label>
+            <select class="form-control" id="numberOfPeople">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="filmSession">A quelle séance souhaitez-vous assister ?</label>
+            <select class="form-control" id="filmSession">
+              <optgroup label="Jeudi 5">
+                <option>18h</option>
+                <option>20h</option>
+                <option>22h</option>
+              </optgroup>
+              <optgroup label="Vendredi 6">
+                <option>18h</option>
+                <option>20h</option>
+                <option>22h</option>
+              </optgroup>
+              <optgroup label="Samedi 7">
+                <option>18h</option>
+                <option>20h</option>
+                <option>22h</option>
+              </optgroup>
+              <optgroup label="Dimanche 8">
+                <option>18h</option>
+                <option>20h</option>
+                <option>22h</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="flexColumn">
+            <label>Souhaitez-vous vous abonner à la newsletter ?</label>
+            <div>
+              <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Oui
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Non
+                </label>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn success">S'inscrire</button>
+        </form>
+      </div>
+      <div class="flex1 ">
+        <h2>Nous Contacter</h2>
+        <form>
+          <div class="form-row form-group">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Votre nom">
+            </div>
+            <div class="col">
+              <input type="email" class="form-control" placeholder="Votre email">
+            </div>
+          </div>
+          <textarea class="form-control" id="message" rows="3" placeholder="Votre message"></textarea>
+          <button type="submit" class="btn success">Envoyer</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+  <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+  
+  <script type="text/javascript" src="js/multislider.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxjzi6-nHG9O1VqRLE_0SW_ibVDFfcJ4Y&callback=initMap"></script>
+</body>
+</html>

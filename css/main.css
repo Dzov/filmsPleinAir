@@ -1,0 +1,210 @@
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #031424;
+  font-family: 'Titillium Web'; }
+
+section {
+  padding: 5% 5%; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+  a:hover {
+    color: #DC143C;
+    text-decoration: none; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+h2 {
+  font-family: 'Abel'; }
+
+/*-------- HEADER --------*/
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  padding: 15px 0;
+  z-index: 100;
+  color: white;
+  font-family: "Abel";
+  padding: 10px 60px; }
+  header h1 {
+    font-size: 30px;
+    margin-bottom: 0;
+    border: 2px solid #f2ef00;
+    padding: 5px 10px; }
+
+nav li {
+  margin-left: 20px; }
+  nav li a:hover {
+    color: #f2ef00; }
+
+.active {
+  color: #f2ef00; }
+
+/*-------- HOME --------*/
+.home {
+  height: 100vh;
+  margin: 0;
+  background: url("../img/home.jpg") no-repeat center center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  font-family: 'Abel'; }
+  .home__title {
+    margin-bottom: 40px; }
+  .home__btns button {
+    width: 200px;
+    margin-right: 20px; }
+  .home__btns--more {
+    background-color: #DC143C;
+    color: white; }
+  .home__btns--films {
+    background-color: #DC143C;
+    color: white; }
+
+/*-------- ABOUT --------*/
+.about {
+  background-color: #E7E6F7; }
+  .about h2 {
+    color: white;
+    padding: 5px 10px; }
+  .about__pres {
+    margin-right: 20px; }
+    .about__pres h2 {
+      background-color: #DC143C; }
+    .about__pres p {
+      padding: 10px;
+      text-align: justify; }
+  .about__info h2 {
+    background-color: #3E78B2; }
+  .about__info__container {
+    padding: 10px; }
+    .about__info__container li {
+      display: flex;
+      flex-direction: column;
+      text-align: center; }
+      .about__info__container li i {
+        width: 20px;
+        height: 20px;
+        color: #2B303A;
+        align-self: center;
+        margin-right: 5px; }
+      .about__info__container li p {
+        margin: 0; }
+
+/*-------- NEWS --------*/
+.news {
+  text-align: justify; }
+  .news h2 {
+    background-color: #3E78B2;
+    color: white;
+    padding: 5px 10px; }
+  .news__container {
+    padding: 10px; }
+    .news__container article {
+      margin-right: 15px; }
+
+/*-------- FILMS --------*/
+.films {
+  background-color: #2B303A;
+  color: white;
+  text-align: center; }
+
+#slider {
+  position: relative;
+  /* recommended */ }
+  #slider .MS-content {
+    white-space: nowrap;
+    /* required */
+    overflow: hidden;
+    /* required */
+    margin: 0 5%; }
+  #slider .MS-controls .MS-left {
+    left: 5px; }
+  #slider .MS-controls .MS-right {
+    right: 5px; }
+  #slider .MS-controls button {
+    position: absolute;
+    top: 200px;
+    background-color: transparent;
+    border: 2px solid #f2ef00;
+    color: white;
+    height: 70px;
+    width: 50px;
+    font-size: 20px; }
+
+.item {
+  display: inline-block;
+  /* required */
+  width: 33.33%;
+  /* required * Determines number of visible slides */
+  position: relative;
+  /* required */
+  vertical-align: top;
+  /* required */
+  overflow: hidden;
+  /* required */
+  height: 100%;
+  /* recommended */
+  white-space: normal;
+  /* recommended */ }
+  .item figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    width: 300px;
+    margin: 0 auto; }
+    .item figure img {
+      height: 400px;
+      width: auto;
+      position: relative; }
+    .item figure figcaption {
+      margin-top: 5px; }
+      .item figure figcaption i {
+        font-size: 18px; }
+  .item:hover .item__details {
+    bottom: 10%;
+    height: 90%; }
+
+.item__details {
+  background-color: #E7E6F7;
+  color: #2B303A;
+  padding: 20px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease; }
+
+.datetime {
+  background-color: #DC143C;
+  color: white;
+  padding: 10px;
+  position: absolute;
+  top: 20px;
+  left: 20px; }
+
+@media screen and (max-width: 1160px) {
+  #slider .MS-content .item {
+    width: 50%; } }
+@media screen and (max-width: 750px) {
+  #slider .MS-content .item {
+    width: 100%; } }
+.success {
+  background-color: #4DA167;
+  color: white; }
+
+/*# sourceMappingURL=main.css.map */
