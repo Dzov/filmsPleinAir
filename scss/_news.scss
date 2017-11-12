@@ -1,0 +1,17 @@
+.news {
+  text-align: justify;
+
+  h2 {
+    background-color: $info; 
+    color: white;
+    padding: 5px 10px; 
+  }
+
+  &__container {
+    padding: 10px; 
+
+    article {
+      margin-right: 15px; 
+    }
+  }
+}

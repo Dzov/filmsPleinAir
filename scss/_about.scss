@@ -1,0 +1,55 @@
+
+.about {
+  background-color: $lightgreyC; 
+
+  h2 {
+    color: white; 
+    padding: 5px 10px; 
+  }
+
+  &__pres {
+    margin-right: 20px;
+
+    h2 {
+      background-color: $crimsonC; 
+    }
+
+    p {
+      padding: 10px; 
+      text-align: justify;
+    }
+  }
+
+  &__info{
+    h2 {
+      background-color: $info; 
+    }
+
+    &__container {
+      padding: 10px; 
+
+      li{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        i {
+          width: 20px; 
+          height: 20px; 
+          color: $charcoalC; 
+          align-self: center;
+          margin-right: 5px; 
+        }
+
+        p {
+          margin: 0; 
+        }
+      }
+    }
+  }
+}
+
+#map {
+  width: 60%; 
+  height: 200px; 
+}

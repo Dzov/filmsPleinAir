@@ -1,0 +1,102 @@
+
+.films {
+  background-color: $charcoalC; 
+  color: white; 
+  text-align: center;
+
+}
+
+
+#slider {
+  position: relative;      /* recommended */
+
+  .MS-content {
+    white-space: nowrap;     /* required */
+    overflow: hidden;        /* required */
+    margin: 0 5%; 
+  }
+
+  .MS-controls {
+    .MS-left {
+      left: 5px;
+    }
+
+    .MS-right {
+      right: 5px; 
+    }
+
+    button {
+      position: absolute;
+      top: 200px; 
+      background-color: transparent; 
+      border: 2px solid $yellowC;
+      color: white; 
+      height: 70px; 
+      width: 50px; 
+      font-size: 20px; 
+    }
+  }
+}
+
+.item {
+  display: inline-block;   /* required */
+  width: 33.33%;              /* required * Determines number of visible slides */ 
+  position: relative;      /* required */
+  vertical-align: top;     /* required */
+  overflow: hidden;        /* required */
+  height: 100%;            /* recommended */
+  white-space: normal;     /* recommended */
+
+  figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    width: 300px; 
+    margin: 0 auto; 
+
+    img {
+      height: 400px; 
+      width: auto;
+      position: relative;
+    }
+
+    figcaption {
+      margin-top: 10px; 
+      i {
+        font-size: 18px; 
+      }
+    }
+  }
+
+  &:hover .item__details {
+    bottom: 12%; 
+    height: 90%; 
+  }
+}
+
+.item__details {
+  background-color: $lightgreyC;
+  color: $charcoalC;
+  padding: 25px 20px; 
+  border-radius: 2px; 
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+  overflow: scroll;
+}
+
+.datetime {
+  background-color: $crimsonC; 
+  color: white; 
+  padding: 10px; 
+  position: absolute;
+  top: 20px; 
+  left: 20px; 
+}
