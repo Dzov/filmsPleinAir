@@ -90,6 +90,16 @@
   height:0;
   transition: .5s ease;
   overflow: scroll;
+
+  a {
+    color: $crimsonC;
+    text-decoration: none; 
+
+    &:hover {
+      text-decoration: underline; 
+      color: $crimsonC; 
+    }
+  }
 }
 
 .datetime {
