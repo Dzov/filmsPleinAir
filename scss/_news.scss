@@ -15,3 +15,12 @@
     }
   }
 }
+
+.readMore {
+  color: $info;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

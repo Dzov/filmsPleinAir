@@ -20,13 +20,15 @@ section {
   padding: 5% 5%; 
 }
 
-a {
-  color: inherit;
+
+.actionLink {
   text-decoration: none; 
+  color: $crimsonC; 
+  font-size: 17px; 
 
   &:hover {
-    color: $crimsonC;
-    text-decoration: none;
+    text-decoration: underline;
+    color: $crimsonC; 
   }
 }
 

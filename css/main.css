@@ -9,12 +9,13 @@ body {
 section {
   padding: 5% 5%; }
 
-a {
-  color: inherit;
-  text-decoration: none; }
-  a:hover {
-    color: #DC143C;
-    text-decoration: none; }
+.actionLink {
+  text-decoration: none;
+  color: #DC143C;
+  font-size: 17px; }
+  .actionLink:hover {
+    text-decoration: underline;
+    color: #DC143C; }
 
 ul {
   list-style-type: none;
@@ -50,8 +51,12 @@ header {
 
 nav li {
   margin-left: 20px; }
-  nav li a:hover {
-    color: #f2ef00; }
+  nav li a {
+    color: inherit;
+    text-decoration: none; }
+    nav li a:hover {
+      color: #f2ef00;
+      text-decoration: none; }
 
 .hamburger {
   display: none; }
@@ -219,6 +224,12 @@ nav li {
     padding: 10px; }
     .news__container article {
       margin-right: 15px; }
+
+.readMore {
+  color: #3E78B2;
+  text-decoration: none; }
+  .readMore:hover {
+    text-decoration: underline; }
 
 .contact {
   padding: 0; }
