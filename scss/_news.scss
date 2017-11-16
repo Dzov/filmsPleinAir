@@ -10,8 +10,9 @@
   &__container {
     padding: 10px; 
 
-    article {
+    .card {
       margin-right: 15px; 
+      padding: 15px;
     }
   }
 }
@@ -19,6 +20,8 @@
 .readMore {
   color: $info;
   text-decoration: none;
+  align-self: center;
+
 
   &:hover {
     text-decoration: underline;

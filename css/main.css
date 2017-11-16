@@ -9,13 +9,13 @@ body {
 section {
   padding: 5% 5%; }
 
-.actionLink {
-  text-decoration: none;
-  color: #DC143C;
-  font-size: 17px; }
-  .actionLink:hover {
-    text-decoration: underline;
-    color: #DC143C; }
+.actionBtn {
+  background-color: #DC143C;
+  color: white;
+  width: 200px;
+  margin-top: 25px; }
+  .actionBtn:hover {
+    color: white; }
 
 ul {
   list-style-type: none;
@@ -60,6 +60,9 @@ nav li {
 
 .hamburger {
   display: none; }
+
+.logo {
+  font-size: 20px; }
 
 .active {
   color: #f2ef00; }
@@ -173,6 +176,12 @@ nav li {
   height: 0;
   transition: .5s ease;
   overflow: scroll; }
+  .item__details a {
+    color: #DC143C;
+    text-decoration: none; }
+    .item__details a:hover {
+      text-decoration: underline;
+      color: #DC143C; }
 
 .datetime {
   background-color: #DC143C;
@@ -202,14 +211,7 @@ nav li {
       border: 2px solid #f2ef00;
       padding-left: 10px; }
   .home__btns button {
-    width: 200px;
     margin-right: 20px; }
-  .home__btns--more {
-    background-color: #DC143C;
-    color: white; }
-  .home__btns--films {
-    background-color: #DC143C;
-    color: white; }
 
 .responsiveNav {
   display: none; }
@@ -222,12 +224,14 @@ nav li {
     padding: 5px 10px; }
   .news__container {
     padding: 10px; }
-    .news__container article {
-      margin-right: 15px; }
+    .news__container .card {
+      margin-right: 15px;
+      padding: 15px; }
 
 .readMore {
   color: #3E78B2;
-  text-decoration: none; }
+  text-decoration: none;
+  align-self: center; }
   .readMore:hover {
     text-decoration: underline; }
 
@@ -309,9 +313,6 @@ nav li {
 
   header {
     padding: 10px 30px; }
-
-  .logo {
-    font-size: 20px; }
 
   .home__title {
     font-size: 30px; } }

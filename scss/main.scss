@@ -20,14 +20,14 @@ section {
   padding: 5% 5%; 
 }
 
-.actionLink {
-  text-decoration: none; 
-  color: $crimsonC; 
-  font-size: 17px; 
+.actionBtn {
+  background-color: $crimsonC; 
+  color: white; 
+  width: 200px; 
+  margin-top: 25px;
 
   &:hover {
-    text-decoration: underline;
-    color: $crimsonC; 
+    color: white;
   }
 }
 
