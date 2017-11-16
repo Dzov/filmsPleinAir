@@ -28,12 +28,12 @@
     button {
       position: absolute;
       top: 200px; 
-      background-color: transparent; 
-      border: 2px solid $yellowC;
+      background-color: $crimsonC; 
       color: white; 
       height: 70px; 
-      width: 50px; 
+      width: 40px; 
       font-size: 20px; 
+
     }
   }
 }

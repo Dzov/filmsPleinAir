@@ -28,6 +28,10 @@ h2 {
   background-color: #4DA167;
   color: white; }
 
+.btn {
+  font-family: 'Titillium Web';
+  font-size: 17px; }
+
 /*-------- HEADER --------*/
 header {
   width: 100%;
@@ -48,6 +52,9 @@ nav li {
   margin-left: 20px; }
   nav li a:hover {
     color: #f2ef00; }
+
+.hamburger {
+  display: none; }
 
 .active {
   color: #f2ef00; }
@@ -106,11 +113,10 @@ nav li {
   #slider .MS-controls button {
     position: absolute;
     top: 200px;
-    background-color: transparent;
-    border: 2px solid #f2ef00;
+    background-color: #DC143C;
     color: white;
     height: 70px;
-    width: 50px;
+    width: 40px;
     font-size: 20px; }
 
 .item {
@@ -179,11 +185,17 @@ nav li {
   background-size: cover;
   color: white;
   text-align: center;
-  font-family: 'Abel'; }
+  font-family: 'Abel';
+  padding: 0; }
+  .home__banner {
+    width: 100%;
+    background-color: rgba(43, 48, 59, 0.7);
+    padding: 30px 20px; }
   .home__title {
     margin-bottom: 40px; }
     .home__title span {
-      border: 2px solid #f2ef00; }
+      border: 2px solid #f2ef00;
+      padding-left: 10px; }
   .home__btns button {
     width: 200px;
     margin-right: 20px; }
@@ -193,6 +205,9 @@ nav li {
   .home__btns--films {
     background-color: #DC143C;
     color: white; }
+
+.responsiveNav {
+  display: none; }
 
 .news {
   text-align: justify; }
@@ -205,8 +220,19 @@ nav li {
     .news__container article {
       margin-right: 15px; }
 
-.contact__form--subscribe {
-  margin-right: 20px; }
+.contact {
+  padding: 0; }
+  .contact button {
+    width: 100%; }
+  .contact__form {
+    padding: 5%; }
+    .contact__form--contact {
+      background-color: #E7E6F7; }
+      .contact__form--contact button {
+        margin-top: 10px; }
+
+#numberOfPeople {
+  margin-right: 10px; }
 
 @media screen and (max-width: 1160px) {
   #slider .MS-content .item {
@@ -220,6 +246,15 @@ nav li {
       margin-top: 20px;
       align-self: center; } }
 @media screen and (max-width: 875px) {
+  header {
+    background-color: #30415D;
+    opacity: .89; }
+    header #nav {
+      display: none; }
+    header .hamburger {
+      display: flex;
+      font-size: 30px; }
+
   .about {
     flex-direction: column; }
 
@@ -240,11 +275,37 @@ nav li {
     align-items: center;
     margin: 0; }
     .contact__form {
-      width: 80%; }
+      width: 100%; }
+      .contact__form button {
+        margin-top: 10px;
+        width: 100%; }
       .contact__form--subscribe {
         margin-bottom: 20px; } }
 @media screen and (max-width: 750px) {
-  #slider .MS-content .item {
-    width: 100%; } }
+  #MS-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #MS-content .item {
+      width: 100%;
+      margin-bottom: 20px; }
+
+  .MS-controls {
+    display: none; } }
+@media screen and (max-width: 570px) {
+  #map {
+    display: none; }
+
+  header {
+    padding: 10px 30px; }
+
+  .logo {
+    font-size: 20px; }
+
+  .home__title {
+    font-size: 30px; } }
+@media screen and (max-width: 483px) {
+  .home__btns--more {
+    margin-bottom: 10px; } }
 
 /*# sourceMappingURL=main.css.map */

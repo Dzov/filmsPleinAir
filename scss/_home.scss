@@ -8,12 +8,20 @@
   color: white; 
   text-align: center;
   font-family: 'Abel'; 
+  padding: 0;
+
+  &__banner {
+    width: 100%; 
+    background-color: rgba(43, 48, 59, .7);
+    padding: 30px 20px; 
+  }
 
   &__title {
     margin-bottom: 40px; 
 
     span {
       border: 2px solid $yellowC;
+      padding-left: 10px; 
 
     }
   }
@@ -34,4 +42,8 @@
       color: white; 
     }
   }
+}
+
+.responsiveNav {
+  display: none;
 }

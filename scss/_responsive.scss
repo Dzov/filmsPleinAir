@@ -18,6 +18,21 @@
 }
 
 @media screen and (max-width: 875px){
+
+  header {
+    background-color: #30415D;
+    opacity: .89; 
+
+    #nav {
+      display: none; 
+    }
+
+    .hamburger {
+      display: flex;
+      font-size: 30px; 
+    }
+  }
+
   .about {
     flex-direction: column;
   }
@@ -46,7 +61,12 @@
     margin: 0; 
 
     &__form {
-      width: 80%; 
+      width: 100%; 
+
+      button {
+        margin-top: 10px;
+        width: 100%;
+      }
 
       &--subscribe {
         margin-bottom: 20px; 
@@ -56,8 +76,42 @@
 }
 
 @media screen and (max-width: 750px){
-  #slider .MS-content .item {
-    width: 100%; 
+  #MS-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .item {
+      width: 100%; 
+      margin-bottom: 20px; 
+    }
   }
 
+  .MS-controls {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 570px){
+  #map {
+    display: none; 
+  }
+
+  header {
+    padding: 10px 30px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .home__title {
+    font-size: 30px; 
+  }
+}
+
+@media screen and (max-width: 483px) {
+  .home__btns--more {
+    margin-bottom: 10px; 
+  }
 }
