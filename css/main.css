@@ -376,4 +376,7 @@ nav li {
   opacity: .2;
   margin-bottom: 25px; }
 
+.blog__page {
+  height: calc(100vh - 58px); }
+
 /*# sourceMappingURL=main.css.map */
