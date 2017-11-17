@@ -15,12 +15,34 @@ section {
   width: 200px;
   margin-top: 25px; }
   .actionBtn:hover {
-    color: white; }
+    color: white;
+    background-color: rgba(238, 0, 41, 0.8); }
+
+.actionLink {
+  padding: 3px 10px;
+  background-color: #DC143C;
+  color: white;
+  display: flex;
+  margin-top: 25px; }
+  .actionLink i {
+    font-size: 20px;
+    margin-right: 5px;
+    align-self: center; }
+  .actionLink:hover {
+    color: white;
+    background-color: rgba(238, 0, 41, 0.8); }
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+  a:hover {
+    text-decoration: none;
+    color: inherit; }
 
 h2 {
   font-family: 'Abel'; }
@@ -126,6 +148,8 @@ nav li {
     height: 70px;
     width: 40px;
     font-size: 20px; }
+    #slider .MS-controls button:hover {
+      background-color: rgba(238, 0, 41, 0.8); }
 
 .item {
   display: inline-block;
@@ -177,11 +201,9 @@ nav li {
   transition: .5s ease;
   overflow: scroll; }
   .item__details a {
-    color: #DC143C;
-    text-decoration: none; }
-    .item__details a:hover {
-      text-decoration: underline;
-      color: #DC143C; }
+    text-decoration: none;
+    align-self: center;
+    width: 70%; }
 
 .datetime {
   background-color: #DC143C;
@@ -319,5 +341,39 @@ nav li {
 @media screen and (max-width: 483px) {
   .home__btns--more {
     margin-bottom: 10px; } }
+.blog {
+  background-color: #E7E6F7; }
+  .blog h2 {
+    text-align: center;
+    margin-bottom: 40px; }
+  .blog__header {
+    background-color: #30415d;
+    opacity: .89;
+    position: relative; }
+    .blog__header ul {
+      min-width: 15%; }
+  .blog__intro {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 25px; }
+  .blog__card {
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 80%; }
+    .blog__card .card-title {
+      background-color: #3E78B2;
+      padding: 8px 5px;
+      color: white; }
+    .blog__card .card-subtitle {
+      color: rgba(43, 48, 58, 0.5); }
+    .blog__card .actionLink {
+      align-self: center; }
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background-color: #2B303A;
+  opacity: .2;
+  margin-bottom: 25px; }
 
 /*# sourceMappingURL=main.css.map */

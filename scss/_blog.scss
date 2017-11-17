@@ -1,0 +1,52 @@
+.blog {
+  background-color: $lightgreyC; 
+
+  h2 {
+    text-align: center;
+    margin-bottom: 40px; 
+  }
+
+  &__header {
+    background-color: #30415d; 
+    opacity: .89;
+    position: relative;
+
+    ul {
+      min-width: 15%; 
+    }
+  }
+
+  &__intro {
+    text-align: center;
+    font-size: 18px; 
+    margin-bottom: 25px; 
+  }
+
+  &__card {
+    margin-bottom: 20px; 
+    padding: 20px;
+    width: 80%; 
+
+    .card-title {
+      background-color: $info; 
+      padding: 8px 5px; 
+      color: white; 
+    }
+
+    .card-subtitle {
+      color: rgba(43, 48, 58, .5);
+    }
+
+    .actionLink {
+      align-self: center;
+    }
+  }
+}
+
+.separator {
+  width: 100%;
+  height: 1px; 
+  background-color: $charcoalC; 
+  opacity: .2; 
+  margin-bottom: 25px; 
+}

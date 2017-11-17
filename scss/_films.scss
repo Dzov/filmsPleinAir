@@ -34,6 +34,9 @@
       width: 40px; 
       font-size: 20px; 
 
+      &:hover {
+        background-color: rgba(238, 0, 41, .8); 
+      }
     }
   }
 }
@@ -92,13 +95,9 @@
   overflow: scroll;
 
   a {
-    color: $crimsonC;
     text-decoration: none; 
-
-    &:hover {
-      text-decoration: underline; 
-      color: $crimsonC; 
-    }
+    align-self: center;
+    width: 70%; 
   }
 }
 
