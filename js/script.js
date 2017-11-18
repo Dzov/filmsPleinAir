@@ -21,11 +21,12 @@ $('#slider').multislider({
 
 // HEADER ANIMATION ON SCROLL
 window.onscroll = function headerAnim() {
-  if (document.documentElement.scrollTop > 10) {
+  if (document.body.scrollTop > 10) {
+    console.log(document.documentElement.scrollTop); 
     document.getElementById('header').style.backgroundColor = "#30415D";
     document.getElementById('header').style.opacity = .89; 
   } else {
-    if (document.documentElement.clientWidth > 875) {
+    if (document.body.clientWidth > 875) {
       document.getElementById('header').style.backgroundColor = "transparent";
     }
   }
@@ -33,7 +34,7 @@ window.onscroll = function headerAnim() {
 
 // SMOOTHSCROLL
 $(document).ready(function () {
-  $(document).on("scroll", onScroll);
+  $(document).on("scroll", activeLink);
 
   $('a[href^="#"]').on('click', function (e) {
     e.preventDefault();
@@ -51,13 +52,13 @@ $(document).ready(function () {
       'scrollTop': $target.offset().top+2
     }, 500, 'swing', function () {
       window.location.hash = target;
-      $(document).on("scroll", onScroll);
+      $(document).on("scroll", activeLink);
     });
   });
 });
 
 // ACTIVE NAV LINK
-function onScroll(event){
+function activeLink(event){
   var scrollPos = $(document).scrollTop();
   $('#nav a').each(function () {
     var currLink = $(this);

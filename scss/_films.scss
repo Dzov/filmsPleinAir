@@ -8,11 +8,11 @@
 
 
 #slider {
-  position: relative;      /* recommended */
+  position: relative;
 
   .MS-content {
-    white-space: nowrap;     /* required */
-    overflow: hidden;        /* required */
+    white-space: nowrap;
+    overflow: hidden;
     margin: 0 5%; 
   }
 
@@ -42,18 +42,25 @@
 }
 
 .item {
-  display: inline-block;   /* required */
-  width: 33.33%;              /* required * Determines number of visible slides */ 
-  position: relative;      /* required */
-  vertical-align: top;     /* required */
-  overflow: hidden;        /* required */
-  height: 100%;            /* recommended */
-  white-space: normal;     /* recommended */
+  display: inline-block;
+  width: 33.33%;
+  position: relative;
+  vertical-align: top;
+  overflow: hidden;
+  height: 100%;
+  white-space: normal;
 
   figure {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     position: relative;
     width: 300px; 
@@ -91,12 +98,15 @@
   overflow: hidden;
   width: 100%;
   height:0;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
   transition: .5s ease;
   overflow: scroll;
 
   a {
     text-decoration: none; 
-    align-self: center;
+    -ms-flex-item-align: center; 
+        align-self: center;
     width: 70%; 
   }
 }

@@ -20,7 +20,8 @@
 .readMore {
   color: $info;
   text-decoration: none;
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 
 
   &:hover {
