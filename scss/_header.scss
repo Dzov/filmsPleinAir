@@ -39,6 +39,34 @@ nav {
   display: none;
 }
 
+.hidden {
+  display: none; 
+}
+
+.responsiveNav {
+  display: flex;
+  background-color: #30415D; 
+  position: fixed;
+  top: 58px; 
+  right: 0; 
+
+  ul {
+    width: 100%; 
+    padding: 10px; 
+
+    li {
+      margin: 0;
+      padding: 10px; 
+      width: 100%; 
+      border-bottom: 1px solid $lightgreyC;
+
+      &:first-child {
+        border-top: 1px solid $lightgreyC;
+      }
+    }
+  }
+}
+
 
 .logo {
   font-size: 20px;

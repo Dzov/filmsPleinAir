@@ -87,6 +87,26 @@ nav li {
 .hamburger {
   display: none; }
 
+.hidden {
+  display: none; }
+
+.responsiveNav {
+  display: flex;
+  background-color: #30415D;
+  position: fixed;
+  top: 58px;
+  right: 0; }
+  .responsiveNav ul {
+    width: 100%;
+    padding: 10px; }
+    .responsiveNav ul li {
+      margin: 0;
+      padding: 10px;
+      width: 100%;
+      border-bottom: 1px solid #E7E6F7; }
+      .responsiveNav ul li:first-child {
+        border-top: 1px solid #E7E6F7; }
+
 .logo {
   font-size: 20px; }
 
@@ -244,9 +264,6 @@ nav li {
       padding-left: 10px; }
   .home__btns button {
     margin-right: 20px; }
-
-.responsiveNav {
-  display: none; }
 
 .news {
   text-align: justify; }

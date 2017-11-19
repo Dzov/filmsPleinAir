@@ -83,3 +83,23 @@ $(window).resize(function() {
   }
 });
 
+// RESPONSIVE NAV 
+
+$(window).resize(function() {
+  if (document.documentElement.clientWidth > 875) {
+    document.querySelector('#responsiveNav').classList.add('hidden');
+    document.querySelector('#responsiveNav').classList.remove('responsiveNav'); 
+  }
+}); 
+
+function responsiveNav() {
+  var nav = document.querySelector('#responsiveNav'); 
+  if (nav.classList.contains('hidden')) {
+    nav.classList.remove('hidden');
+    nav.classList.add('responsiveNav'); 
+  } else {
+    nav.classList.add('hidden'); 
+    nav.classList.remove('responsiveNav'); 
+  }
+}
+
