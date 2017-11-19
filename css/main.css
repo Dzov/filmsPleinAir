@@ -480,6 +480,6 @@ nav li {
   margin-bottom: 25px; }
 
 .blog__page {
-  height: calc(100vh - 58px); }
+  min-height: calc(100vh - 58px); }
 
 /*# sourceMappingURL=main.css.map */
