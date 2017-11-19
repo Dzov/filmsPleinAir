@@ -282,6 +282,38 @@ nav li {
 #numberOfPeople {
   margin-right: 10px; }
 
+.footer {
+  background-color: #2B303A;
+  color: white; }
+  .footer__content {
+    padding: 20px;
+    width: 100%; }
+  .footer__nav {
+    text-align: center;
+    font-size: 14px; }
+    .footer__nav li {
+      padding: 5px;
+      border-bottom: 1px solid #E7E6F7;
+      width: 80%; }
+      .footer__nav li:first-child {
+        border-top: 1px solid #E7E6F7; }
+  .footer__media {
+    margin-bottom: 20px;
+    text-align: center; }
+    .footer__media li {
+      color: #3E78B2; }
+      .footer__media li:first-child {
+        margin-right: 15px; }
+
+.copyright {
+  background-color: black;
+  color: #E7E6F7;
+  opacity: .6;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  font-size: 11px; }
+
 @media screen and (max-width: 1160px) {
   #slider .MS-content .item {
     width: 50%; }
@@ -387,6 +419,13 @@ nav li {
 @media screen and (max-width: 483px) {
   .home__btns--more {
     margin-bottom: 10px; } }
+@media screen and (min-width: 800px) {
+  .footer__nav {
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto; }
+    .footer__nav li, .footer__nav li:first-child {
+      border: 0px; } }
 .blog {
   background-color: #E7E6F7; }
   .blog h2 {

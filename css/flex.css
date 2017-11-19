@@ -97,3 +97,7 @@
       -ms-flex: 2;
           flex: 2;
 }
+
+.textCenter {
+  text-align: center;
+}
